@@ -4,18 +4,18 @@ let whackImageWhole
 
 /* Setup function once called at the start */
 function setup() {
-  whackImageHalf = createImg('https://whackathon.org/images/whackathon_half.png')
-  whackImageWhole = createImg('https://whackathon.org/images/whackathon_whole.png')
+  whackImageHalf = createImg('whackathon-logo-half.svg')
+  whackImageWhole = createImg('whackathon-logo-full.svg')
   whackImageHalf.hide()
   whackImageWhole.hide()
-  backgroundColour = color('#4B8CFF')
+  backgroundColour = color('#5865FF')
   backgroundColour.setAlpha(80)
   createCanvas(windowWidth, windowHeight)
 }
 
 /* Called every x seconds */
 function draw() {
-  let offsetX = whackImageHalf.width / 2
+  let offsetX = whackImageHalf.width / 4
   let offsetY = whackImageHalf.height / 2
   background(backgroundColour)
   if (mouseIsPressed) { // p5 provides handy global variables as mouseIsPressed or coordinates
